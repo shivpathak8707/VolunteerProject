@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-all-java",
+      "type": "shell",
+      "command": "javac -d out -cp \"lib/*\" src\\com\\volunteerapp\\*.java",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always" },
+      "problemMatcher": ["$javac"]
+    }
+  ]
+}
